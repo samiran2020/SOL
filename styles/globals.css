@@ -1,0 +1,229 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import './responsive.css';
+
+@layer base {
+  :root {
+    --actionBackground: 0 0% 13%;
+    --actionforeground: 30 40% 98%;
+
+    --taskColor: 208.6 88.43% 47.45%;
+    --subTaskColor: 165.56 65.52% 60.2%;
+
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --topbar-background: 0 0% 100%;
+    --topbar-icon: 0 0% 100%;
+
+    --footbar-background: 0 0% 92%;
+
+    --borderColor: 0 0% 88%;
+
+    --cardBg: 0 0% 100%;
+    --cardBg-foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --pophover: 0 0% 95%;
+    --pophover-foreground: 281 34% 39%;
+
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 281 34% 39%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+    --thetextcol:hsl(0deg 0% 35.29%);
+    --thelightgreen:hsl(129.58deg 83.22% 28.04% / 16%);
+    --thegreencol:hsl(84, 68%, 46%);
+    --thewhfont:hsl(0deg 0% 100%);
+
+    --red-primery:355, 100%, 47%;
+    --grey-primery:0, 0%, 23%;
+    --green-secondary:115, 99%, 35%;
+    --yellow-secondary:48, 99%, 52%;
+    --light-grey:30, 33%, 96%;
+  
+  }
+
+  .dark {
+    --background: 179 100% 0%;
+    --foreground: 210 40% 98%;
+
+    --topbar-background: 179 100% 0%;
+    --topbar-icon: 0 0% 100%;
+
+    --footbar-background: 179 100% 0%;
+
+    --borderColor: 0 0% 88% / 0.3;
+
+    --actionBackground: 0 0% 13%;
+    --actionforeground: 30 40% 98%;
+
+    --cardBg: 0 0% 13%;
+    --cardBg-foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 13%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 0 0% 13%;
+    --popover-foreground: 210 40% 98%;
+
+    --pophover: 0 0% 0%;
+    --pophover-foreground: 22 94% 62%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+
+    --border-bottom-color: #e1e1e1;
+    --action-border-bottom-color: #848484;
+  }
+}
+
+
+/* html {
+  touch-action: none; Disable pinch-to-zoom
+  
+} */
+
+body {
+  zoom: reset; /* Prevent any zoom level adjustments */
+}
+
+
+
+/* ::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+} */
+/* ::-webkit-scrollbar-track {
+  border-radius: 3px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: #dcdcdc;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d0d0d0;
+} */
+input:focus{
+  outline: none;
+}
+
+.bg-green-600{background-color: #84c426;}
+
+.order-accordion-arrow h3{
+margin: 0 ;
+}
+
+.active-tab {
+  color: var(--thegreencol);
+font-weight: 600;
+  
+}
+
+.order-accordion .lucide-chevron-down{
+  margin-top: 0px;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: var(--thegreencol);
+  border-radius: 18px;
+  padding: 3px;
+  color: var(--thewhfont);
+}
+.order-accordion {
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.auth-bg-image {
+  /* background:url('/images/login-bg.jpg'); */
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.dashbord-tab .data-\[state\=active\]\:bg-background[data-state="active"] {
+  background-color: var(--thegreencol);
+}
+
+.dashbord-tab .data-\[state\=active\]\:text-foreground[data-state="active"] {
+  color: var(--thewhfont);
+}
+
+.dashbord-tab{ background-color: var(--thelightgreen); color:var(--thetextcol);}
+
+.banner-img img{ width:100% !important; height: 100% !important; object-fit: cover; object-position: center;}
+.input-box {
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 7px;
+  padding-left: 0.5rem;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.input-box .prefix {
+  font-weight: 400;
+  font-size: 17px;
+  color: #9a9ca2;
+}
+
+.input-box input {
+  flex-grow: 1;
+  font-size: 16px;
+  background: #fff;
+  border: none;
+  outline: none;
+  padding: 0.5rem 0.5rem 0.5rem 0.2rem ;
+}
+
+.input-box:focus-within {
+  border-color: #84c426;
+}
+.ii .iii{border:none !important;}
+.ii .iii input{border:none !important;}

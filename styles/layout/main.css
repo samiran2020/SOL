@@ -1,0 +1,34 @@
+.layout-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 92vh;
+  padding: 0rem 0rem 0rem 0rem;
+  transition: all 0.5s;
+}
+
+.layout-main {
+  flex: 1 1 auto;
+}
+
+.f-menu li {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+.cate-img img {
+  margin: 0 auto;
+}
+
+.tabarrow {
+  margin-top: -70px;
+  position: relative;
+}
+
+.one-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}/*# sourceMappingURL=main.css.map */
