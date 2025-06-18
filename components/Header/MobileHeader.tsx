@@ -11,6 +11,8 @@ import Navigation from "../Navigation/Navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "../ui/button";
+import { FaFacebookF, FaDribbble, FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const MobileHeader = () => {
   return (
@@ -40,6 +42,22 @@ const MobileHeader = () => {
                     <Link href="tel:+31642032432" className="call flex flex-row items-center  gap-1 mt-1 pl-3">
                         <p className="font-medium text-DarkPrimary  text-xs leading-5">Address: Bredalaan 63, 5652 JB Eindhoven, Netherlands</p>
                     </Link>
+                    <div className="col-span-5 flex justify-start pl-2 mt-4">
+                        <ul className="flex flex-row gap-3 items-center">
+                        <li>
+                            <Link href={""}><FaFacebookF size={18} className="text-DarkPrimary hover:text-colorPrimary"/></Link>
+                        </li>
+                        <li>
+                            <Link href={""}><FaDribbble size={18} className="text-DarkPrimary hover:text-colorPrimary"/></Link>
+                        </li>
+                        <li>
+                            <Link href={""}><FaXTwitter size={18} className="text-DarkPrimary hover:text-colorPrimary"/></Link>
+                        </li>
+                        <li>
+                            <Link href={""}><FaInstagram size={18} className="text-DarkPrimary hover:text-colorPrimary"/></Link>
+                        </li>
+                        </ul>
+                    </div>
                     <Button asChild className="py-1 md:py-2 px-2 md:px-4 bg-colorPrimary text-xs md:text-sm text-white ml-3 rounded-3xl border-0 outline-none mk-reserv-buttn mt-5">
                         <Link href="" className="relative z-10 inline-flex" >Make a reservation</Link>
                     </Button>

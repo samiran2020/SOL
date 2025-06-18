@@ -14,7 +14,7 @@ const Header = () => {
     //     setwished(!wish);
     // };
   return (
-      <div className="Header-Section border-t-4 border-t-colorPrimary relative z-10">
+      <div className="Header-Section border-t-4 border-t-colorPrimary  sticky top-0 self-start bg-white z-20 ">
         <div className="container">
             <div className="grid grid-cols-12 relative">
                 <div className="col-span-2 relative mb-[-40px] md:mb-[-60px] pt-1">
